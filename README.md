@@ -25,5 +25,14 @@ newest update time: 20170730
 		<td> [go to leetcode](https://leetcode.com/problems/two-sum/description/)  </td>
 		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00001_TwoSum)   </td>
 	</tr>
+	<tr>
+		<td> 2 </td>
+		<td> Add Two Numbers </td>
+		<td> 27.6% </td>
+		<td> Medium </td>
+		<td>  </td>
+		<td> [go to leetcode](https://leetcode.com/problems/add-two-numbers/description/)  </td>
+		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00001_TwoSum)   </td>
+	</tr>
 	
 </table>
