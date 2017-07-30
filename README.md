@@ -16,7 +16,6 @@ newest update time: 20170730
 		<td> go to leetcode </td>
 		<td> go to my solution </td>
 	</tr>
-	
 	<tr>
 		<td> 1 </td>
 		<td> Two Sum </td>
