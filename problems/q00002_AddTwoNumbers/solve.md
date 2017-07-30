@@ -6,7 +6,7 @@ q2: Add Two Numbers
 <pre><code>
 class Solution {
 public:
-    ListNode\* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         vector<int> vn;
         int jin = 0;
         while(l1 && l2){
@@ -31,15 +31,15 @@ public:
             vn.push_back(jin);
         }
         if(vn.size() == 0) return NULL;
-        ListNode \*ln = (ListNode \*) malloc(sizeof(ListNode));
+        ListNode *ln = (ListNode *) malloc(sizeof(ListNode));
         ln->val = vn[0]; ln->next = NULL;
         if(vn.size() == 1) return ln;
-        ListNode \*lnr = (ListNode \*) malloc(sizeof(ListNode));
+        ListNode *lnr = (ListNode *) malloc(sizeof(ListNode));
         ln->next = lnr;
         for(int i = 1; i < vn.size(); i++){
             lnr->val = vn[i];
             if(i < vn.size() - 1){
-                ListNode *tmp = (ListNode \*) malloc(sizeof(ListNode));
+                ListNode *tmp = (ListNode *) malloc(sizeof(ListNode));
                 lnr->next = tmp; lnr = tmp;
             }else{
                 lnr->next = NULL;
@@ -54,9 +54,9 @@ public:
 <pre><code>
 class Solution {
 public:
-    ListNode\* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         int carry = 0;
-        ListNode \*ln = nullptr, \*lnr, \*tmp;
+        ListNode *ln = nullptr, *lnr, *tmp;
         while(l1 || l2){
             int v1 = l1 ? l1->val : 0, v2 = l2 ? l2->val : 0;
             int a = v1 + v2 + carry;
