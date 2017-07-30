@@ -3,8 +3,7 @@ q2: Add Two Numbers
 - 一开始做的
 用了一个vector&lt;int&gt;来保存结果的每一位，最后把这个vector利用for循环存为链表  
 代码如下：
-<pre><code>
-/\*\*
+<pre><code>/\*\*
  \* Definition for singly-linked list.
  \* struct ListNode {
  \*     int val;
@@ -55,13 +54,11 @@ public:
         }
         return ln;
     }
-};
-</code></pre>
+};</code></pre>
 可以看出其实没有必要采用一个vector保留结果； 而且3个循环保证两个链表结束了也比较繁琐。只不过这样看起来实现起来好像简单一些
   
 - 其他比较好的代码
-<pre><code>
-/\*\*
+<pre><code>/\*\*
  \* Definition for singly-linked list.
  \* struct ListNode {
  \*     int val;
@@ -91,8 +88,7 @@ public:
         if(carry) lnr->next = new ListNode(carry);
         return ln;
     }
-};
-</code></pre>
+};</code></pre>
 
 - 总结
 注意这种数据结构新建对象（变量）的方式
