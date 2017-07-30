@@ -32,7 +32,7 @@ newest update time: 20170730
 		<td> Medium </td>
 		<td>  </td>
 		<td> [go to leetcode](https://leetcode.com/problems/add-two-numbers/description/)  </td>
-		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00001_TwoSum)   </td>
+		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00002_AddTwoNumbers)   </td>
 	</tr>
 	
 </table>
