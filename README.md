@@ -19,7 +19,7 @@ newest update time: 20170730
 	
 	<tr>
 		<td> 1 </td>
-		<td> Two Sum </th>
+		<td> Two Sum </td>
 		<td> 34.2% </td>
 		<td> Easy </td>
 		<td>  </td>
