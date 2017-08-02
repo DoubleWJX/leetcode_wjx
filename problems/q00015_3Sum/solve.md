@@ -7,9 +7,9 @@
 为了减少排序的复杂度，我先把输入的数组按照非递减序列排序
 <pre><code>class Solution {
 public:
-    <vector<vector<int>> threeSum(vector<int>& nums) {
-        vector<vector<int>> vvn;
-        map<int, int> mapTmp;
+    vector&lt;vector&lt;int&gt;&gt; threeSum(vector<int>& nums) {
+        vector&lt;vector&lt;int&gt;&gt; vvn;
+        map&lt;int, int&gt; mapTmp;
         sort(nums.begin(), nums.end());
         for(int i = 0; i < nums.size(); i++){
             int target = -nums[i];
@@ -38,10 +38,11 @@ public:
 分析代码我觉得最浪费时间的就是保证不重复，不过半天也想不到更好的解决方法。下面看看其他我觉得很好的方法吧
 - 方法二
 该方法就是来自leetcode提交后的Discussion那个部分，因为自己的代码没有ac之前好像看不到别人ac的代码？？  
-保证不重复的思路就是：当某个元素的被考虑了之后就跳过该元素直到下一个与该元素不同的元素。具体的讲，在外层循环中，某个元素处理完成之后，跳过与该元素相同的其他元素直到某个与当前元素不同的元素；；；在内层循环里面也是一样的，某个元素被访问过（不管是不是解的一部分）以后，直接跳到下一个与当前元素不同的那个元素继续扫描。下面看代码<pre><code>class Solution {
+保证不重复的思路就是：当某个元素的被考虑了之后就跳过该元素直到下一个与该元素不同的元素。具体的讲，在外层循环中，某个元素处理完成之后，跳过与该元素相同的其他元素直到某个与当前元素不同的元素；；；在内层循环里面也是一样的，某个元素被访问过（不管是不是解的一部分）以后，直接跳到下一个与当前元素不同的那个元素继续扫描。下面看代码
+<pre><code>class Solution {
 public:
-    vector< vector< int>> threeSum(vector<int>& nums) {
-        vector<vector<int>> res;
+    vector&lt;vector&lt;int&gt;&gt; threeSum(vector<int>& nums) {
+        vector&lt;vector&lt;int&gt;&gt; res;
         sort(nums.begin(), nums.end());
         int n = nums.size();
         for(int i = 0; i < n;){
@@ -51,7 +52,7 @@ public:
                 if(nums[begin] + nums[end] > target) end--;
                 else if(nums[begin] + nums[end] < target) begin++;
                 else{
-                    vector<int> vTmp(3, 0);
+                    vector&lt;int&gt; vTmp(3, 0);
                     vTmp[0] = nums[i]; vTmp[1] = nums[begin]; vTmp[2] = nums[end];
                     res.push_back(vTmp);
                     while(begin < end && nums[begin] == vTmp[1]) begin++;

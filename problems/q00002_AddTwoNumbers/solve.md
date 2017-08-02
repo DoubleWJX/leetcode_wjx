@@ -7,7 +7,7 @@ q2: Add Two Numbers
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        vector<int> vn;
+        vector&lt;int&gt; vn;
         int jin = 0;
         while(l1 && l2){
             int a = l1->val + l2->val + jin;
