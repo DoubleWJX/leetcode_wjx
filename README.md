@@ -35,6 +35,15 @@ newest update time: 20170802
 		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00002_AddTwoNumbers)   </td>
 	</tr>
 	<tr>
+		<td> 3 </td>
+		<td> Longest Substring Without Repeating Characters </td>
+		<td> 24.3% </td>
+		<td> Medium </td>
+		<td>  </td>
+		<td> [go to leetcode](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)  </td>
+		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00003_Longest_Substring_Without_Repeating_Characters)   </td>
+	</tr>
+	<tr>
 		<td> 15 </td>
 		<td> 3Sum </td>
 		<td> 21.6% </td>
