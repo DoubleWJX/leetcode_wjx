@@ -1,5 +1,6 @@
-方法一  
-类似于q15([3Sum](https://leetcode.com/problems/3sum/description/))，分解为1个元素和两个元素之和，下面是代码<pre><code>class Solution {
+- 方法一  
+类似于q15([3Sum](https://leetcode.com/problems/3sum/description/))，分解为1个元素和两个元素之和，下面是代码
+<pre><code>class Solution {
 public:
     int threeSumClosest(vector<int>& nums, int target_0) {
         sort(nums.begin(), nums.end());
