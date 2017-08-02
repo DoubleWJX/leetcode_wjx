@@ -2,7 +2,7 @@ leetcode record
 ===
 website: [https://leetcode.com/problemset/all/](https://leetcode.com/problemset/all/ "leetcode")  
 start time: 20170730  
-newest update time: 20170730
+newest update time: 20170802
 
 ---
 
@@ -34,5 +34,13 @@ newest update time: 20170730
 		<td> [go to leetcode](https://leetcode.com/problems/add-two-numbers/description/)  </td>
 		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00002_AddTwoNumbers)   </td>
 	</tr>
-	
+	<tr>
+		<td> 15 </td>
+		<td> 3Sum </td>
+		<td> 21.6% </td>
+		<td> Medium </td>
+		<td>  </td>
+		<td> [go to leetcode](https://leetcode.com/problems/3sum/description//)  </td>
+		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00015_3Sum)   </td>
+	</tr>
 </table>
