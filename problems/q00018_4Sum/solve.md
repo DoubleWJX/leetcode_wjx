@@ -2,7 +2,7 @@
 如下题目可以按照同样的套路来解决：  
 1 [#1 Two Sum](https://leetcode.com/problems/two-sum/description/)  
 2 [#15 3Sum](https://leetcode.com/problems/3sum/description//)  
-3 [# 3Sum Closest](https://leetcode.com/problems/3sum-closest/description/)  
+3 [#16 3Sum Closest](https://leetcode.com/problems/3sum-closest/description/)  
 思路  
 第一步：对数组进行排序  
 第二步：第一层循环控制第一个数，里面的保证后面 ```n - 1``` 个数的和等于 ```target - nums[i]```，并在循环最后面跳过和当前元素值不一样的那一个元素  
