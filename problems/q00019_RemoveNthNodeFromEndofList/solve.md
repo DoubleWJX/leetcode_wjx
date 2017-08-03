@@ -3,26 +3,26 @@
 如果要删除第一个元素，直接返回head->next  
 删除某元素之后，记得最好free一下  
 代码如下：  
-<pre><code>/\*\*
- \* Definition for singly-linked list.
- \* struct ListNode {
- \*     int val;
- \*     ListNode \*next;
- \*     ListNode(int x) : val(x), next(NULL) {}
- \* };
- \*/
+<pre><code>/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode \*next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
 class Solution {
 public:
-    ListNode\* removeNthFromEnd(ListNode\* head, int n) {
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
         int ns = 0;
-        ListNode \*ltmp = head;
+        ListNode *ltmp = head;
         while(ltmp){
             ns++;
             ltmp = ltmp->next;
         }        
         n = ns - n + 1;
         if(n == 1){
-            ListNode \*tmp = head;
+            ListNode *tmp = head;
             head = head->next;
             free(tmp);
             return head;
@@ -32,7 +32,7 @@ public:
         while(ltmp){
             ns++;
             if(ns + 1 == n){
-                ListNode \*tmp = ltmp->next;
+                ListNode *tmp = ltmp->next;
                 ltmp->next = tmp->next;
                 free(tmp);
                 return head;
@@ -48,9 +48,9 @@ public:
 下面是代码：  
 <pre><code>class Solution {
 public:
-    ListNode\* removeNthFromEnd(ListNode\* head, int n) {
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
         int ns = 0;
-        ListNode \*fast = head, \*slow = head;
+        ListNode *fast = head, *slow = head;
         while(ns < n){
             fast = fast->next;
             ns++;
@@ -62,12 +62,12 @@ public:
             ns++;
         }
         if(ns == 0){
-            ListNode \*tmp = head;
+            ListNode *tmp = head;
             head = head->next;
             delete tmp;
             return head;
         }
-        ListNode \*tmp = slow->next;
+        ListNode *tmp = slow->next;
         slow->next = slow->next->next;
         delete tmp;
         return head;
