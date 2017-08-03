@@ -61,4 +61,13 @@ newest update time: 20170802
 		<td> [go to leetcode](https://leetcode.com/problems/3sum-closest/description/)  </td>
 		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00016_3SumClosest)   </td>
 	</tr>
+	<tr>
+		<td> 18 </td>
+		<td> 4Sum </td>
+		<td> 26.7% </td>
+		<td> Medium </td>
+		<td>  </td>
+		<td> [go to leetcode](https://leetcode.com/problems/4sum/description/)  </td>
+		<td>  [my solution](https://github.com/DoubleWJX/leetcode_wjx/tree/master/problems/q00018_4Sum   </td>
+	</tr>
 </table>
