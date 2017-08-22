@@ -52,3 +52,26 @@ private:
     std::map&lt;char, vector&lt;char>> map;
 };</code></pre>
 
+- 方法二：迭代  
+<pre><code>class Solution {
+public:
+    vector<string> letterCombinations(string digits) {
+        vector<string> vs;
+        if(digits.size() == 0) return vector<string>();
+        static const vector<string> strs = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        vs.push_back("");
+        for(int i = 0; i < digits.size(); i++){
+            int n = digits[i] - '0';
+            string str = strs[n];
+            vector<string> tmp;
+            for(int j = 0; j < vs.size(); j++){
+                for(int k = 0; k < str.size(); k++){
+                    tmp.push_back(vs[j] + str[k]);
+                }
+            }
+            vs.swap(tmp);
+        }
+        return vs;
+    }
+};
+</code></pre>
