@@ -1,5 +1,6 @@
 ## q17: Letter Combinations of a Phone Number 
-- 方法一：递归（减治？) <pre><code>class Solution {
+- 方法一：递归（减治？) 
+<pre><code>class Solution {
 public:
     vector&lt;string> myLetter(string digits) {
         int n = digits.size();
