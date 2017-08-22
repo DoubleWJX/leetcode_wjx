@@ -6,6 +6,7 @@ public:
         int n = digits.size();
         vector&lt;string> vs;
         if(n == 0) {
+            
         } else if(n == 1) {
             char c = digits[0];
             string sTmp = "a";
